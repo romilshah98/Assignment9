@@ -54,33 +54,33 @@
             $(window).resize(function () {
                 $("#div2").text("Width of the window is: " + $(window).width() + " and Hidth of the window is: " + $(window).height());
             });
-            $("#txt").focusin(function(){
-                $(this).css("background-color","silver");
+            $("#txt").focusin(function () {
+                $(this).css("background-color", "silver");
             });
-            $("input").focusout(function(){
-                $(this).css("background-color","white");
+            $("input").focusout(function () {
+                $(this).css("background-color", "white");
             });
-            $("form").submit(function(event){
-                var isValid=true;
-                var name=$("#name").val().trim();
-                var email=$("#email").val().trim();
-                if(email===""){
-                    isValid=false;
+            $("form").submit(function (event) {
+                var isValid = true;
+                var name = $("#name").val().trim();
+                var email = $("#email").val().trim();
+                if (email === "") {
+                    isValid = false;
                     window.alert("Email is required!");
-                    $("#email").css("border-color","red");
+                    $("#email").css("border-color", "red");
                 }
-                else{
-                    $("#email").css("border-color","green");
+                else {
+                    $("#email").css("border-color", "green");
                 }
-                if(name===""){
-                    isValid=false;
+                if (name === "") {
+                    isValid = false;
                     window.alert("Name is required!");
-                    $("#name").css("border-color","red");
+                    $("#name").css("border-color", "red");
                 }
-                else{
-                    $("#name").css("border-color","green");
+                else {
+                    $("#name").css("border-color", "green");
                 }
-                if (isValid===false){
+                if (isValid === false) {
                     event.preventDefault();
                 }
             });
