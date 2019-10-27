@@ -18,7 +18,7 @@
             $("#btn3").on("click", function () {
                 window.alert('Button 3 has been clicked!');
             });
-            $("#btn4,#btn5").on("click", function () {
+            $(".btn").on("click", function () {
                 window.alert('Button 4/5 has been clicked!');
             });
             $("#div1").width("400px").height("400px").on({
@@ -32,7 +32,7 @@
                     window.alert('Div has been left!');
                 }
             });
-            $("#div1").width("400px").height("400px").on({
+            $("#div3").width("400px").height("400px").on({
                 click: function () {
                     $("span").text("Div has been clicked!");
                 },
@@ -80,9 +80,7 @@
                 else {
                     $("#name").css("border-color", "green");
                 }
-                if (isValid === false) {
-                    event.preventDefault();
-                }
+                event.preventDefault();
             });
         });
     </script>
@@ -92,11 +90,13 @@
     <button id="btn1">Button 1</button><br><br>
     <button id="btn2">Button 2</button><br><br>
     <button id="btn3">Button 3</button><br><br>
-    <button id="btn4">Button 4</button><br><br>
-    <button id="btn5">Button 5</button><br><br>
+    <button id="btn4" class="btn">Button 4</button><br><br>
+    <button id="btn5" class="btn">Button 5</button><br><br>
     <div id="div1" style="background: silver;">
     </div><br><br>
-    <span></span><br><br>
+    <div id="div3" style="background: silver;">
+        <span></span>
+    </div><br><br>
     <a href="modulemedia.com">Module Media</a><br><br>
     <div id="div2"></div><br><br>
     <input id="txt" type="text"><br><br>
