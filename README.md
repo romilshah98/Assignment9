@@ -1,3 +1,3 @@
-# Assignment9
- ### Welcome to Assingnment 9 of CS648 ###
-There are two files in this assignment, which are animated using JQuery.
+# JQuery
+
+### Used Jquery to programmatically add and remove css, used different jQuery events to manipulate DOM objects, etc.
